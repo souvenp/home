@@ -8,7 +8,7 @@
           <Music />
         </div>
       </el-col>
-      <el-col :span="12">
+      <el-col :span="12" style="display: flex; justify-content: center; align-items: center;">
         <div class="right cards">
           <div class="time">
             <div class="date">
@@ -25,7 +25,6 @@
               >
             </div>
           </div>
-          <Weather />
         </div>
       </el-col>
     </el-row>
@@ -38,7 +37,6 @@ import { getCurrentTime } from "@/utils/getTime";
 import { mainStore } from "@/store";
 import Music from "@/components/Music/index.vue";
 import Hitokoto from "@/components/Hitokoto/index.vue";
-import Weather from "@/components/Weather/index.vue";
 
 const store = mainStore();
 
@@ -119,20 +117,14 @@ onBeforeUnmount(() => {
           text-overflow: ellipsis;
           overflow-x: hidden;
           white-space: nowrap;
+          margin-top: 22px;
         }
         .text {
-          margin-top: 10px;
+          margin-top: 15px;
           font-size: 3.25rem;
           letter-spacing: 2px;
           font-family: "UnidreamLED";
         }
-      }
-      .weather {
-        text-align: center;
-        width: 100%;
-        text-overflow: ellipsis;
-        overflow-x: hidden;
-        white-space: nowrap;
       }
     }
   }

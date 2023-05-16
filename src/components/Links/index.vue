@@ -17,9 +17,7 @@
           class="item cards"
           :style="index < 3 ? 'margin-bottom: 20px' : null"
         >
-          <Icon size="26">
-            <component :is="item.icon" />
-          </Icon>
+         
           <span class="name">{{ item.name }}</span>
         </div>
       </el-col>
@@ -44,34 +42,18 @@ import {
 // 建议不要超出6个，若需要超出请自行调整样式
 let linksData = [
   {
-    icon: Blog,
-    name: "博客",
-    link: "https://blog.imsyy.top/",
+    icon: "https://alist.nn.ci/logo.svg",
+    name: "Alist",
+    link: "https://alist.rakuen.top/",
   },
-  {
+   {
     icon: Cloud,
-    name: "网盘",
-    link: "https://pan.imsyy.top/",
-  },
-  {
-    icon: CompactDisc,
-    name: "音乐",
-    link: "https://music.imsyy.top/",
-  },
-  {
-    icon: Compass,
-    name: "起始页",
-    link: "https://nav.imsyy.top/",
-  },
-  {
-    icon: Book,
-    name: "网址集",
-    link: "https://web.imsyy.top/",
-  },
-  {
-    icon: Fire,
-    name: "今日热榜",
-    link: "https://hot.imsyy.top/",
+    name: "Onedrive",
+    link: "https://od.rakuen.top/",
+  }, {
+    icon: Cloud,
+    name: "套娃网盘",
+    link: "https://pan.rakuen.top/",
   },
 ];
 

@@ -4,7 +4,7 @@
     <main>
       <div class="container" v-show="!store.backgroundShow">
         <section class="main" v-show="!store.setOpenState">
-          <MainLeft />
+          
           <MainRight v-show="!store.boxOpenState" />
           <Box v-show="store.boxOpenState" />
         </section>
@@ -34,7 +34,6 @@ import { helloInit, checkDays } from "@/utils/getTime.js";
 import { mainStore } from "@/store";
 import { Icon } from "@vicons/utils";
 import { HamburgerButton, CloseSmall } from "@icon-park/vue-next";
-import MainLeft from "@/views/Main/Left.vue";
 import MainRight from "@/views/Main/Right.vue";
 import Background from "@/components/Background/index.vue";
 import Footer from "@/components/Footer/index.vue";
@@ -42,8 +41,7 @@ import Box from "@/views/Box/index.vue";
 import MoreSet from "@/views/MoreSet/index.vue";
 import cursorInit from "@/utils/cursor.js";
 import config from "@/../package.json";
-// 新春灯笼
-// import "@/utils/lantern.js";
+
 
 const store = mainStore();
 
@@ -69,27 +67,6 @@ onMounted(() => {
     loadingBox.classList.add("loaded");
   });
 
-  // 屏蔽右键
-  document.oncontextmenu = () => {
-    ElMessage({
-      message: "为了浏览体验，本站禁用右键",
-      grouping: true,
-      duration: 2000,
-    });
-    return false;
-  };
-
-  // 鼠标中键事件
-  window.addEventListener("mousedown", (event) => {
-    if (event.button == 1) {
-      store.backgroundShow = !store.backgroundShow;
-      if (store.backgroundShow) {
-        ElMessage("已开启壁纸展示状态");
-      } else {
-        ElMessage("已退出壁纸展示状态");
-      }
-    }
-  });
 
   // 监听当前页面宽度
   getWidth();
@@ -99,14 +76,7 @@ onMounted(() => {
   let styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   let styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   let styleContent = "color: rgb(30,152,255);";
-  let title1 = "無名の主页";
-  let title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|`;
+  let title1 = "...";
   let content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
   console.info(
     `%c${title1} %c${title2} %c${content}`,

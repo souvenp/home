@@ -1,23 +1,14 @@
 <template>
   <footer>
     <div class="power" v-show="!store.playerState">
-      <span
-        >Copyright&nbsp;&copy;&nbsp;{{ fullYear }}
-        <a href="https://imsyy.top">無名</a>
-      </span>
       <!-- 以下信息请不要修改哦 -->
-      <span class="hidden"
-        >&nbsp;&amp;&nbsp;Made&nbsp;by&nbsp;<a
+      <span class="hidden" style="color: grey;"
+        >&nbsp;&nbsp;Made&nbsp;by&nbsp <a
           :href="config.github"
-          target="_blank"
-        >
-          {{ config.author }}
+          target="_blank">imsyy
         </a></span
-      >&nbsp;&amp;
-      <!-- 站点备案 -->
-      <a href="https://beian.miit.gov.cn" target="_blank"
-        >豫ICP备2022018134号-1</a
-      >
+      >&nbsp;
+     
     </div>
     <div class="lrc" v-show="store.playerState">
       <music-one theme="filled" size="18" fill="#efefef" />
