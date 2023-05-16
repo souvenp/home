@@ -24,17 +24,8 @@
       window.location.href =
       "https://support.dmeng.net/upgrade-your-browser.html?referrer=" + encodeURIComponent(window.location.href)
   </script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <% if (tongji) { %>
-  <!-- 百度统计 -->
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?<%- tongji %>";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
   <% } %>
 </head>
 
@@ -51,7 +42,7 @@
       </div>
       <div class="loading-word">
         <p class="loading-title" id="loading-title"><%- title %></p>
-        <span id="loading-text">加载中</span>
+        <span id="loading-text">loading</span>
       </div>
     </div>
   </div>
