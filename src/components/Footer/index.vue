@@ -1,5 +1,5 @@
 <template>
-  <footer >
+  <footer>
     <div class="power" v-show="!store.playerState">
       <!-- 以下信息请不要修改哦 -->
       <span class="hidden" style="color: grey;"
