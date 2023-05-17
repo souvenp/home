@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="power" v-show="!store.playerState">
+    <div class="power" v-show="!store.playerState" style="display: flex; justify-content: space-between;">
     
     <div style="text-align: center; width: 100%;">
       <!-- 以下信息请不要修改哦 -->
