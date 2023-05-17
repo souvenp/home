@@ -13,9 +13,9 @@
                 </span>
                 
                 
-                <div class="container">
-         <div v-if="startDateText && store.siteStartShow">
-      <span class="text hidden-text"  v-html="startDateText" /> </div></div>
+                <span class="container">
+         <span v-if="startDateText && store.siteStartShow">
+      <span class="text hidden-text"  v-html="startDateText" /> </span>
       
     </div>
     <div class="lrc" v-show="store.playerState">
