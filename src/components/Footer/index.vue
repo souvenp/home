@@ -12,9 +12,9 @@
 <span style="color: grey;">本站总访问量 <span id="busuanzi_value_site_pv" ></span>                次
 </span>
 <span class="timetu" 
-      v-if="startDateText && store.siteStartShow"
+      v-if="store.siteStartShow"
 >
-  <span class="text" :class="hidden-text" v-html="startDateText" /></span>
+  <span class="text hidden-text" v-html="startDateText" /></span>
 
                 
                 
