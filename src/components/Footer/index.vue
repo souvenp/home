@@ -61,10 +61,7 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 
 <style lang="scss" scoped>
 
-.hidden-text {
-    visibility: hidden;
-    transition: visibility 0.3s ease;
-}
+
 
 .timetu:hover .hidden-text {
     visibility: visible;
