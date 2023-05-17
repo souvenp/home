@@ -33,7 +33,7 @@ const changeBg = (type) => {
     bgUrl.value = "https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images";
   } else if (type == 3) {
     // bgUrl.value = "https://www.dmoe.cc/random.php";
-    bgUrl.value = `/images/background${String(Math.floor(Math.random() * 10 + 1)).padStart(3, '0')}.webp`;
+    bgUrl.value = `/images/bg/${String(Math.floor(Math.random() * 10 + 1)).padStart(3, '0')}.webp`;
 
   }
 };
