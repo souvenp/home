@@ -1,8 +1,7 @@
 <template>
 <footer>
-    <div class="power" v-show="!store.playerState" style="display: flex; justify-content: space-between; align-items: center;">
-        <div></div> <!-- 这个空的 div 是用来占位的，使得中间的 div 能够在页面中居中 -->
-        <div style="text-align: center; flex-grow: 1;">
+    <div class="power" v-show="!store.playerState" style="position: relative;">
+        <div style="position: absolute; width: 100%; text-align: center;">
             <!-- 以下信息请不要修改哦 -->
             <span class="hidden" style="color: grey;">
                 &nbsp;&nbsp;Made&nbsp;by&nbsp 
@@ -13,9 +12,11 @@
                 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
             </span>
         </div>
-        <span class="timetu" v-if="store.siteStartShow" style="text-align: right;">
+        <span class="timetu" v-if="store.siteStartShow" style="position: absolute; right: 0;">
             <span class="text hidden-text" v-html="startDateText" />
         </span>
+
+
 
 
 
