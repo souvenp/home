@@ -12,7 +12,7 @@
                 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
             </span>
         </div>
-        <span class="timetu" v-if="store.siteStartShow" style="position: absolute; right: 0;">
+        <span class="timetu" v-if="store.siteStartShow" style="position: absolute; right: 20; color: grey;">
             <span class="text hidden-text" v-html="startDateText" />
         </span>
 
