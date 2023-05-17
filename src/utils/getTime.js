@@ -105,17 +105,17 @@ export const helloInit = () => {
   }
   ElMessage({
     dangerouslyUseHTMLString: true,
-    message: `<strong>${hello}</strong> 欢迎来到我的主页`,
+    message: `<strong>${hello}</strong> ようこそ楽園へ`,
   });
 };
 
 // 默哀模式
 const anniversaries = {
-  4.4: "清明节",
-  5.12: "汶川大地震纪念日",
-  7.7: "中国人民抗日战争纪念日",
-  9.18: "九·一八事变纪念日",
-  12.13: "南京大屠杀死难者国家公祭日",
+  4.4: "",
+  5.12: "",
+  7.7: "",
+  9.18: "",
+  12.13: "",
 };
 export const checkDays = () => {
   const myDate = new Date();
