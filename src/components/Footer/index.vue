@@ -66,7 +66,7 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 
 <style lang="scss" scoped>
 
-.hidden {
+.hidden2 {
     visibility: hidden;
 }
 footer {
