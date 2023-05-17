@@ -1,23 +1,21 @@
 <template>
-  <footer>
-    <div class="power" v-show="!store.playerState" style="display: flex; justify-content: space-between;">
-    
-    <div style="width: 50%;  margin: auto; text-align: center; flex-grow: 1;">
-      <!-- 以下信息请不要修改哦 -->
-      <span class="hidden" style="color: grey;"
-        >&nbsp;&nbsp;Made&nbsp;by&nbsp <a
-          :href="config.github"
-          target="_blank">imsyy
-        </a></span
-      >&nbsp;
- 
-       <span style="color: grey;">本站总访问量 <span id="busuanzi_value_site_pv" ></span>                次
-       </span>    
-    </div>   
-  <span class="timetu" 
-      v-if="store.siteStartShow" style="margin-right: 10px;"
->
-  <span class="text hidden-text" v-html="startDateText" /></span>
+<footer>
+    <div class="power" v-show="!store.playerState" style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div style="text-align: center;">
+            <!-- 以下信息请不要修改哦 -->
+            <span class="hidden" style="color: grey;">
+                &nbsp;&nbsp;Made&nbsp;by&nbsp 
+                <a :href="config.github" target="_blank">imsyy</a>
+            </span>
+            &nbsp;
+            <span style="color: grey;">
+                本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+            </span>
+        </div>
+        <span class="timetu" v-if="store.siteStartShow" style="text-align: right;">
+            <span class="text hidden-text" v-html="startDateText" />
+        </span>
+
 
                 
                 
