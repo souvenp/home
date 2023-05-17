@@ -66,12 +66,15 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 <style lang="scss" scoped>
 
 .hidden-text {
+    opacity: 0;
     visibility: hidden;
-    transition: visibility 0.5s ease;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
 .timetu:hover .hidden-text {
+    opacity: 1;
     visibility: visible;
+    transition: opacity 0.5s ease, visibility 0s;
 }
 footer {
   width: 100%;
