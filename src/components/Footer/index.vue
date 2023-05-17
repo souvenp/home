@@ -2,7 +2,7 @@
   <footer>
     <div class="power" v-show="!store.playerState" style="display: flex; justify-content: space-between;">
     
-    <div style="width: 50%; text-align: center; flex: 1;">
+    <div style="width: 50%;  margin: auto; text-align: center; flex: 1;">
       <!-- 以下信息请不要修改哦 -->
       <span class="hidden" style="color: grey;"
         >&nbsp;&nbsp;Made&nbsp;by&nbsp <a
