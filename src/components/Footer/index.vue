@@ -15,9 +15,7 @@
        </span>    
     </div>   
   <span class="timetu" 
-      v-if="store.siteStartShow" style="margin-right: 10px;" :class="{'hidden2': !isVisible}" 
-              @mouseenter="isVisible = true" 
-              @mouseleave="isVisible = false" 
+      v-if="store.siteStartShow" style="margin-right: 10px;"
 >
   <span class="text hidden-text" v-html="startDateText" /></span>
 
@@ -66,8 +64,13 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 
 <style lang="scss" scoped>
 
-.hidden2 {
+.hidden-text {
     visibility: hidden;
+    transition: visibility 0.5s ease;
+}
+
+.timetu:hover .hidden-text {
+    visibility: visible;
 }
 footer {
   width: 100%;
