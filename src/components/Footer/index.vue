@@ -2,7 +2,7 @@
   <footer>
     <div class="power" v-show="!store.playerState" style="display: flex; justify-content: space-between;">
     
-    <div style="text-align: center; width: 100%;">
+    <div style="text-align: center; flex: 1;">
       <!-- 以下信息请不要修改哦 -->
       <span class="hidden" style="color: grey;"
         >&nbsp;&nbsp;Made&nbsp;by&nbsp <a
@@ -15,7 +15,7 @@
        </span>    
     </div>   
   <span class="timetu" 
-      v-if="store.siteStartShow"
+      v-if="store.siteStartShow" style="margin-right: 10px;"
 >
   <span class="text hidden-text" v-html="startDateText" /></span>
 
