@@ -1,6 +1,8 @@
 <template>
   <footer>
     <div class="power" v-show="!store.playerState">
+    
+    <div style="text-align: center; width: 100%;">
       <!-- 以下信息请不要修改哦 -->
       <span class="hidden" style="color: grey;"
         >&nbsp;&nbsp;Made&nbsp;by&nbsp <a
@@ -8,10 +10,11 @@
           target="_blank">imsyy
         </a></span
       >&nbsp;
-          
-<span style="color: grey;">本站总访问量 <span id="busuanzi_value_site_pv" ></span>                次
-</span>
-<span class="timetu" 
+ 
+       <span style="color: grey;">本站总访问量 <span id="busuanzi_value_site_pv" ></span>                次
+       </span>    
+    </div>   
+  <span class="timetu" 
       v-if="store.siteStartShow"
 >
   <span class="text hidden-text" v-html="startDateText" /></span>
