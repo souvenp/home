@@ -10,12 +10,12 @@
       >&nbsp;
           
 <span style="color: grey;">本站总访问量 <span id="busuanzi_value_site_pv" ></span>                次
+ <span v-if="startDateText && store.siteStartShow">
+      <span class="text hidden-text"  v-html="startDateText" /> 
                 </span>
                 
                 
-                <span class="container">
-         <span v-if="startDateText && store.siteStartShow">
-      <span class="text hidden-text"  v-html="startDateText" /> </span>
+        
       
     </div>
     <div class="lrc" v-show="store.playerState">
