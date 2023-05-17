@@ -14,7 +14,7 @@
 <span class="timetu" 
       v-if="startDateText && store.siteStartShow"
 >
-  <span class="text" :class="{ 'hidden-text': !store.siteStartShow }" v-html="startDateText" /></span>
+  <span class="text" :class="hidden-text" v-html="startDateText" /></span>
 
                 
                 
