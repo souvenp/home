@@ -11,6 +11,12 @@
           
 <span style="color: grey;">本站总访问量 <span id="busuanzi_value_site_pv" ></span>                次
                 </span>
+                
+                
+                <div class="container">
+         <div v-if="startDateText && store.siteStartShow">
+      <span class="text hidden-text"  v-html="startDateText" /> </div></div>
+      
     </div>
     <div class="lrc" v-show="store.playerState">
       <music-one theme="filled" size="18" fill="#efefef" />
@@ -34,6 +40,15 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 </script>
 
 <style lang="scss" scoped>
+.hidden-text {
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+}
+
+.container:hover .hidden-text {
+    visibility: visible;
+}
+
 footer {
   width: 100%;
   position: absolute;
