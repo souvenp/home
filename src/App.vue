@@ -45,6 +45,14 @@ import config from "@/../package.json";
 
 const store = mainStore();
 
+window.addEventListener("dblclick", (event) => {
+  event.preventDefault();
+  if (event.button === 0) {
+    store.backgroundShow = !store.backgroundShow;
+  }
+});
+
+  
 // 页面宽度
 const getWidth = () => {
   store.setInnerWidth(window.innerWidth);
