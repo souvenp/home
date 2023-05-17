@@ -34,10 +34,12 @@ import { MusicOne } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
 import config from "@/../package.json";
 
+
 import { getTimeCapsule, siteDateStatistics } from "@/utils/getTime.js";
 import { onMounted, onBeforeUnmount, ref } from "vue";
 const store = mainStore();
 
+let timeData = ref(getTimeCapsule());
 let startDate = ref(import.meta.env.VITE_SITE_START);
 let startDateText = ref(null);
 let timeInterval = null;
