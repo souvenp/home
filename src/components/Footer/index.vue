@@ -15,7 +15,9 @@
        </span>    
     </div>   
   <span class="timetu" 
-      v-if="store.siteStartShow" style="margin-right: 10px;"
+      v-if="store.siteStartShow" style="margin-right: 10px;" :class="{'hidden2': !isVisible}" 
+              @mouseenter="isVisible = true" 
+              @mouseleave="isVisible = false" 
 >
   <span class="text hidden-text" v-html="startDateText" /></span>
 
@@ -44,7 +46,7 @@ import config from "@/../package.json";
 import { getTimeCapsule, siteDateStatistics } from "@/utils/getTime.js";
 import { onMounted, onBeforeUnmount, ref } from "vue";
 const store = mainStore();
-
+let isVisible = false;
 let timeData = ref(getTimeCapsule());
 let startDate = ref(import.meta.env.VITE_SITE_START);
 let startDateText = ref(null);
@@ -64,13 +66,8 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 
 <style lang="scss" scoped>
 
-.hidden-text {
+.hidden {
     visibility: hidden;
-    transition: visibility 0.3s ease;
-}
-
-.timetu:hover .hidden-text {
-    visibility: visible;
 }
 footer {
   width: 100%;
