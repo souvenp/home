@@ -1,7 +1,8 @@
 <template>
 <footer>
-    <div class="power" v-show="!store.playerState" style="display: grid; grid-template-columns: 1fr 1fr;">
-        <div style="text-align: center;">
+    <div class="power" v-show="!store.playerState" style="display: flex; justify-content: space-between; align-items: center;">
+        <div></div> <!-- 这个空的 div 是用来占位的，使得中间的 div 能够在页面中居中 -->
+        <div style="text-align: center; flex-grow: 1;">
             <!-- 以下信息请不要修改哦 -->
             <span class="hidden" style="color: grey;">
                 &nbsp;&nbsp;Made&nbsp;by&nbsp 
@@ -15,6 +16,7 @@
         <span class="timetu" v-if="store.siteStartShow" style="text-align: right;">
             <span class="text hidden-text" v-html="startDateText" />
         </span>
+
 
 
                 
