@@ -163,6 +163,12 @@ watch(
 </script>
 
 <style lang="scss" scoped>
+
+.music .btns,
+.music .control,
+.music .menu {
+  z-index: 1;
+}
 .music {
   width: 100%;
   height: 100%;
