@@ -5,10 +5,9 @@
     @mouseenter="volumeShow = true"
     @mouseleave="volumeShow = false"
     v-show="store.musicOpenState"
-    :class="store.getPlayerData.pic ? 'gray sm' : 'gray'"
-    :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))` : 'rgba(0, 0, 0, 0.4)'};
-             color: white`"  >
+    :style="`background: ${store.getPlayerData.pic ? `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${store.getPlayerData.pic}) center / cover no-repeat` : 'rgba(0, 0, 0, 0.4)'}; color: #efefef`">
 
+<!--  <div :class="store.getPlayerData.pic ? 'gray sm' : 'gray'"></div>-->
     <div class="btns">
       <span @click="musicListShow = true">音乐列表</span>
       <span @click="store.musicOpenState = false">返回</span>
