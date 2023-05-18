@@ -33,7 +33,7 @@ const changeBg = (type) => {
     bgUrl.value = "https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images";
   } else if (type == 3) {
     // bgUrl.value = "https://www.dmoe.cc/random.php";
-    const imageCount = 40; // 图片总数
+    const imageCount = 50; // 图片总数
     const randomNumber = Math.floor(Math.random() * imageCount) + 1;
     const paddedNumber = String(randomNumber).padStart(3, '0');
     const randomImage = `${paddedNumber}.webp`;
