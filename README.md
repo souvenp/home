@@ -1,4 +1,4 @@
-简体中文 | [English](./README_EN.md)
+中文 | [English](./README_EN.md)
 
 <p>
 <strong><h2>主页</h2></strong>
