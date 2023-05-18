@@ -168,7 +168,7 @@ watch(
 .music .control,
 .music .menu ,
 .music .volume {
-  color: #808080;
+  color: #ffffff40;
 }
 .music {
   width: 100%;
@@ -273,7 +273,7 @@ watch(
       }
       .el-slider {
         margin-right: 12px;
-        --el-slider-main-bg-color: #efefef;
+        --el-slider-main-bg-color: #ffffff40;
         --el-slider-runway-bg-color: #ffffff40;
         --el-slider-button-size: 16px;
       }
