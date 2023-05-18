@@ -45,7 +45,7 @@ import config from "@/../package.json";
 
 const store = mainStore();
 
-window.addEventListener("dblclick", (event) => {
+window.addEventListener("contextmenu", (event) => {
   event.preventDefault();
   if (event.button === 0) {
     store.backgroundShow = !store.backgroundShow;
