@@ -46,11 +46,7 @@ let linksData = [
     name: "Alist",
     link: "https://alist.rakuen.top/",
   },
-   {
-    icon: Cloud,
-    name: "Onedrive",
-    link: "https://od.rakuen.top/",
-  }, {
+  {
     icon: Cloud,
     name: "套娃网盘",
     link: "https://ppp.rakuen.top/",
