@@ -74,7 +74,7 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
 .timetu:hover .hidden-text {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease, visibility 0s;
+    transition: opacity 1s ease, visibility 0s;
 }
 footer {
   width: 100%;
