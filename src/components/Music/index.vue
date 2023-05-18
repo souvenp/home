@@ -8,7 +8,7 @@
     :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))` : 'rgba(0, 0, 0, 0.4)'};
              color: white`"  >
 
-    <div class="btns">
+    <div class="btns" style="color: grey">
       <span @click="musicListShow = true">音乐列表</span>
       <span @click="store.musicOpenState = false">返回</span>
     </div>
@@ -168,7 +168,7 @@ watch(
 .music .control,
 .music .menu ,
 .music .volume {
-  color: #ffffff40;
+  color: #808080;
 }
 .music {
   width: 100%;
@@ -273,7 +273,7 @@ watch(
       }
       .el-slider {
         margin-right: 12px;
-        --el-slider-main-bg-color: #ffffff40;
+        --el-slider-main-bg-color: #efefef;
         --el-slider-runway-bg-color: #ffffff40;
         --el-slider-button-size: 16px;
       }
