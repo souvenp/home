@@ -167,8 +167,7 @@ watch(
 .music .btns,
 .music .control,
 .music .menu {
-  position: relative; // 确保 z-index 起作用
-  z-index: 1;
+  color: #808080;
 }
 .music {
   width: 100%;
