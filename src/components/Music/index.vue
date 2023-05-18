@@ -5,8 +5,8 @@
     @mouseenter="volumeShow = true"
     @mouseleave="volumeShow = false"
     v-show="store.musicOpenState"
-    :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, rgba(0, 0, 0, 0.4)` : 'rgba(0, 0, 0, 0.4)'}; color: white`"
-  >
+    :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))` : 'rgba(0, 0, 0, 0.4)'};
+             color: white`"  >
 
     <div class="btns">
       <span @click="musicListShow = true">音乐列表</span>
@@ -174,7 +174,6 @@ watch(
   width: 100%;
   height: 100%;
   //background: #00000040;
-  filter: blur(5px);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(10px);
