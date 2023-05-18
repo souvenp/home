@@ -5,6 +5,7 @@
     @mouseenter="volumeShow = true"
     @mouseleave="volumeShow = false"
     v-show="store.musicOpenState"
+    :class="store.getPlayerData.pic ? 'gray sm' : 'gray'"
     :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))` : 'rgba(0, 0, 0, 0.4)'};
              color: white`"  >
 
@@ -164,6 +165,27 @@ watch(
 </script>
 
 <style lang="scss" scoped>
+
+.gray {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0.5) 100%
+  ),
+  radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+
+  transition: 1.5s;
+  &.sm {
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+
 .music .btns,
 .music .control,
 .music .menu ,
