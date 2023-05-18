@@ -176,7 +176,7 @@ watch(
 
   transition: 1.5s;
   &.sm {
-    opacity: 0;
+    opacity: 0.5;
     transition: 1.5s;
   }
 }
