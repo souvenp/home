@@ -267,7 +267,7 @@ defineExpose({ playToggle, changeVolume, changeSong });
         }
       }
       .aplayer-controller {
-        display: none;
+        //display: none;
       }
     }
   }
