@@ -7,10 +7,6 @@
     v-show="store.musicOpenState"
     :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, rgba(0, 0, 0, 0.4)` : 'rgba(0, 0, 0, 0.4)'}; color: white`"
   >
-    <div
-        v-if="store.getPlayerData.pic"
-        class="bg-mask"
-    ></div>
 
     <div class="btns">
       <span @click="musicListShow = true">音乐列表</span>
@@ -168,16 +164,6 @@ watch(
 </script>
 
 <style lang="scss" scoped>
-.bg-mask {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  z-index: 0; // 确保这个元素在其他内容之后
-}
 ..music .btns,
 .music .control,
 .music .menu {
@@ -188,6 +174,7 @@ watch(
   width: 100%;
   height: 100%;
   //background: #00000040;
+  filter: blur(5px);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(10px);
