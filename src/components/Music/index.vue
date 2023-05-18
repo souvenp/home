@@ -168,11 +168,6 @@ watch(
 
 .gray {
   opacity: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background-image: radial-gradient(
           rgba(0, 0, 0, 0) 0,
           rgba(0, 0, 0, 0.5) 100%
