@@ -5,7 +5,7 @@
     @mouseenter="volumeShow = true"
     @mouseleave="volumeShow = false"
     v-show="store.musicOpenState"
-    :style="{ backgroundImage: store.getPlayerData.pic ? `url(${store.getPlayerData.pic})` : '' }"
+    :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, rgba(0, 0, 0, 0.4)` : 'rgba(0, 0, 0, 0.4)'}; color: white`"
   >
     <div class="btns">
       <span @click="musicListShow = true">音乐列表</span>
