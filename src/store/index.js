@@ -20,6 +20,7 @@ export const mainStore = defineStore("main", {
             playerTitle: null, // 当前播放歌曲名
             playerArtist: null, // 当前播放歌手名
             playerLrc: "歌词加载中", // 当前播放歌词
+            playerPic: "",
         }
     },
     getters: {
@@ -32,6 +33,7 @@ export const mainStore = defineStore("main", {
             return {
                 name: state.playerTitle,
                 artist: state.playerArtist,
+                playerPic: state.playerPic,
             }
         },
         // 获取页面宽度
@@ -62,9 +64,10 @@ export const mainStore = defineStore("main", {
             this.playerLrc = value;
         },
         // 更改歌曲数据
-        setPlayerData(title, artist) {
+        setPlayerData(title, artist, pic) {
             this.playerTitle = title;
             this.playerArtist = artist;
+            this.playerPic = pic
         }
     },
     persist: {

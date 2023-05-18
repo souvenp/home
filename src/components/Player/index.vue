@@ -151,7 +151,8 @@ const onPlay = () => {
   // 储存播放器信息
   store.setPlayerData(
     player.value.currentMusic.title,
-    player.value.currentMusic.artist
+    player.value.currentMusic.artist,
+    player.value.currentMusic.pic,
   );
   ElMessage({
     message: store.getPlayerData.name + " - " + store.getPlayerData.artist,
