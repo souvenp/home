@@ -80,7 +80,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .hitokoto {
-  user-select: text;
+  user-select: text !important;
   width: 100%;
   height: 100%;
   padding: 20px;
