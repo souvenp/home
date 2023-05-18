@@ -57,6 +57,7 @@ onBeforeUnmount(() => {
 
 <style lang="scss" scoped>
 .function {
+  user-select: none;
   height: 165px;
   display: flex;
   flex-direction: row;

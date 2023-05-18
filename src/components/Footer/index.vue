@@ -77,6 +77,7 @@ var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a|
     transition: opacity 1s ease, visibility 0s;
 }
 footer {
+  user-select: none;
   width: 100%;
   position: absolute;
   bottom: 0;
