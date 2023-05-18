@@ -33,7 +33,7 @@ export const mainStore = defineStore("main", {
             return {
                 name: state.playerTitle,
                 artist: state.playerArtist,
-                playerPic: state.playerPic,
+                pic: state.playerPic,
             }
         },
         // 获取页面宽度

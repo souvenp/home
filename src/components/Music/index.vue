@@ -5,6 +5,7 @@
     @mouseenter="volumeShow = true"
     @mouseleave="volumeShow = false"
     v-show="store.musicOpenState"
+    :style="{ backgroundImage: store.getPlayerData.pic ? `url(${store.getPlayerData.pic})` : '' }"
   >
     <div class="btns">
       <span @click="musicListShow = true">音乐列表</span>
@@ -165,7 +166,9 @@ watch(
 .music {
   width: 100%;
   height: 100%;
-  background: #00000040;
+  //background: #00000040;
+  background-size: cover;
+  background-position: center;
   backdrop-filter: blur(10px);
   border-radius: 6px;
   padding: 20px;
