@@ -219,10 +219,11 @@ defineExpose({ playToggle, changeVolume, changeSong });
   border-radius: 6px;
   :deep(.aplayer-body) {
     .aplayer-pic {
-      display: none;
+      //display: none;
     }
     .aplayer-info {
-      margin-left: 0;
+      //margin-left: 0;
+      text-align: center;
       background-color: #ffffff40;
       border-color: transparent !important;
       .aplayer-music {
