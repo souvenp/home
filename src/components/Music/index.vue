@@ -8,9 +8,9 @@
     :style="`background: ${store.getPlayerData.pic ? `url(${store.getPlayerData.pic}) center / cover no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))` : 'rgba(0, 0, 0, 0.4)'};
              color: white`"  >
 
-    <div class="btns" style="color: grey">
-      <span @click="musicListShow = true">音乐列表</span>
-      <span @click="store.musicOpenState = false">返回</span>
+    <div class="btns" >
+      <span @click="musicListShow = true" style="color: grey">音乐列表</span>
+      <span @click="store.musicOpenState = false" style="color: grey">返回</span>
     </div>
     <div class="control">
       <go-start
