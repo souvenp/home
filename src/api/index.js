@@ -44,9 +44,8 @@ export const getPlayerList = async (server, type, id) => {
  * 一言
  */
 
-// 获取一言数据
 export const getHitokoto = async () => {
-  const res = await fetch("https://v1.hitokoto.cn");
+  const res = await fetch("https://srld-morning-waterfall-96b5.rakuen.workers.dev/?apiurl=https://meigen.doodlenote.net/api/json.php?c=1&e=1");
   return await res.json();
 };
 

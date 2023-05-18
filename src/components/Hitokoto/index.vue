@@ -49,8 +49,8 @@ const openMusic = () => {};
 const getHitokotoData = () => {
   getHitokoto()
     .then((res) => {
-      hitokotoData.text = res.hitokoto;
-      hitokotoData.from = res.from;
+      hitokotoData.text = res[0].meigen;
+      hitokotoData.from = res[0].auther;
     })
     .catch(() => {
       ElMessage({
