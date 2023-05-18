@@ -47,7 +47,7 @@ const store = mainStore();
 
 window.addEventListener("contextmenu", (event) => {
   event.preventDefault();
-  if (event.button === 0) {
+  if (event.button === 2) {
     store.backgroundShow = !store.backgroundShow;
   }
 });
