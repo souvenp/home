@@ -48,13 +48,3 @@ export const getHitokoto = async () => {
   const res = await fetch("https://srld-morning-waterfall-96b5.rakuen.workers.dev/?apiurl=https://meigen.doodlenote.net/api/json.php?c=1&e=1");
   return await res.json();
 };
-
-/**
- * 天气
- */
-
-// 获取高德地理位置信息
-export const getAdcode = async (key) => {
-  const res = await fetch(`https://restapi.amap.com/v3/ip?key=${key}`);
-  return await res.json();
-};

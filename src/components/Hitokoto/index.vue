@@ -54,7 +54,7 @@ const getHitokotoData = () => {
     })
     .catch(() => {
       ElMessage({
-        message: "一言获取失败",
+        message: "...",
         icon: h(Error, {
           theme: "filled",
           fill: "#efefef",
@@ -65,8 +65,8 @@ const getHitokotoData = () => {
 
 // 更新一言数据
 const updateHitokoto = () => {
-  hitokotoData.text = "新的一言正在赶来的路上";
-  hitokotoData.from = "来源加载中";
+  hitokotoData.text = "俺は俺だ";
+  hitokotoData.from = "...";
   // 防抖
   debounce(() => {
     getHitokotoData();

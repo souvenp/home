@@ -39,8 +39,6 @@ const changeBg = (type) => {
     const randomImage = `${paddedNumber}.webp`;
 
     bgUrl.value = `/images/bg/${randomImage}`;
-
-
   }
 };
 
