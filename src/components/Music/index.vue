@@ -166,7 +166,8 @@ watch(
 <style lang="scss" scoped>
 .music .btns,
 .music .control,
-.music .menu {
+.music .menu ,
+.music .volume {
   color: #808080;
 }
 .music {
