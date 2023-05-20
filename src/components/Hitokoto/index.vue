@@ -18,7 +18,7 @@
       </div>
     </Transition>
     <!-- 一言内容 -->
-    <div class="content" @click="updateHitokoto">
+    <div class="content" @dbclick="updateHitokoto">
       <span class="text">{{ hitokotoData.text }}</span>
       <span class="from">-「&nbsp;{{ hitokotoData.from }}&nbsp;」</span>
     </div>
