@@ -49,7 +49,7 @@ let linksData = [
   {
     icon: Cloud,
     name: "套娃网盘",
-    link: "https://ppp.rakuen.top/",
+    link: "https://pan.rakuen.top/",
   },
 ];
 
