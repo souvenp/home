@@ -48,8 +48,8 @@ let linksData = [
   },
   {
     icon: Cloud,
-    name: "套娃网盘",
-    link: "https://pan.rakuen.top/",
+    name: "图床",
+    link: "https://img.rakuen.top/",
   },
 ];
 
