@@ -56,6 +56,11 @@ let linksData = [
     name: "下载",
     link: "https://d.rakuen.top/",
   },
+      {
+    icon: Cloud,
+    name: "短链",
+    link: "https://s.rakuen.top/",
+  },
 ];
 
 // 链接跳转
