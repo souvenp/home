@@ -64,7 +64,7 @@ let linksData = [
    {
     icon: Cloud,
     name: "Search",
-    link: "https://s.rakuen.top/",
+    link: "https://asobi.rakuen.top/",
   },
 ];
 
