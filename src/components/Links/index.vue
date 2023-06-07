@@ -48,17 +48,22 @@ let linksData = [
   },
   {
     icon: Cloud,
-    name: "图床",
+    name: "Image Upload",
     link: "https://img.rakuen.top/",
   },
     {
     icon: Cloud,
-    name: "下载",
+    name: "Download",
     link: "https://d.rakuen.top/",
   },
       {
     icon: Cloud,
-    name: "短链",
+    name: "Shorten URL",
+    link: "https://s.rakuen.top/",
+  },
+   {
+    icon: Cloud,
+    name: "Search",
     link: "https://s.rakuen.top/",
   },
 ];
